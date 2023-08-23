@@ -93,6 +93,6 @@
     ]
   },
   "id": "harvester",
-  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.6.4/module.json",
+  "manifest": "https://raw.githubusercontent.com/SecretSquirrel77/Harvester/main/module.json",
   "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.6.4/harvester.zip"
 }
