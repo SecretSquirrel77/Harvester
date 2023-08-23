@@ -1,0 +1,98 @@
+{
+  "title": "Better Harvesting & Looting",
+  "description": "A QoL module to improve the harvesting and looting experience.",
+  "url": "https://github.com/OhhLoz/Harvester",
+  "version": "1.6.4",
+  "authors":
+  [
+    {
+      "name": "Loz",
+      "url": "https://github.com/OhhLoz"
+    }
+  ],
+  "compatibility":
+  {
+    "minimum": "11",
+    "verified": "11.305"
+  },
+  "scripts": [],
+  "esmodules": ["scripts/module.js"],
+  "socket": true,
+  "persistentStorage": true,
+  "packs": [
+    {
+      "name": "harvest",
+      "label": "Harvest",
+      "path": "packs/harvest.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "name": "actions",
+      "label": "Actions",
+      "path": "packs/actions.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "name": "loot",
+      "label": "Loot",
+      "path": "packs/loot.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "RollTable",
+      "flags": {}
+    },
+    {
+      "name": "custom",
+      "label": "Custom",
+      "path": "storage/custom.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "Actor",
+      "flags": {}
+    },
+    {
+      "name": "custom-loot",
+      "label": "Custom Loot",
+      "path": "storage/custom-loot.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "RollTable",
+      "flags": {}
+    },
+    {
+      "name": "license",
+      "label": "License",
+      "path": "packs/license.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "JournalEntry",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+            "minimum": "2.2.2"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module"
+      }
+    ]
+  },
+  "id": "harvester",
+  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.6.4/module.json",
+  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.6.4/harvester.zip"
+}
